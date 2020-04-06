@@ -89,7 +89,7 @@ def load_dict_from_json(file_path):
 
 
 chrome_options = Options()
-driver = webdriver.Chrome(executable_path='D:\lotuny...tool\chromedriver_win32\chromedriver',
+driver = webdriver.Chrome(executable_path='./chromedriver',
                           chrome_options=chrome_options)
 # neighbourhoods = get_all_neighbourhoods()  # neighbourhoods in metropolitan
 # final_dict = create_dict(neighbourhoods)
