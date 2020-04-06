@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Data-Visualization.iml" filepath="$PROJECT_DIR$/Data-Visualization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/London Crimes/London Crimes.iml" filepath="$PROJECT_DIR$/London Crimes/London Crimes.iml" />
+    </modules>
+  </component>
+</project>
