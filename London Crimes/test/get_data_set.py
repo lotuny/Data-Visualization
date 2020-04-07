@@ -50,6 +50,7 @@ def fill_dict(final_dict, data_file, start_row, row_num):
             id = locate_crime_neighbourhood_id(latitude, longitude)
             item = final_dict.get(id)
             if item is not None:
+                print('Line ' + str(count) + ': ' + str(id))
                 if item.get('crime').get(month) is None:
                     item.get('crime')[month] = {
                         'Anti-social behaviour': 0,
@@ -74,8 +75,7 @@ def fill_dict(final_dict, data_file, start_row, row_num):
                     item.get('crime')[month]['Other crime'] += 1
                 item.get('crime')[month]['All crime'] += 1
                 file_path = "./data_set_in_neighbourhoods.json"
-                file = open(file_path, "w", encoding='utf-8')
-                file.write("// Ended before line" + str(count)+"\n")
+                file = open(file_path, "w", encoding='utf-8')#
                 file.write(json.dumps(final_dict))
                 file.close()
     fh.close()
@@ -97,6 +97,6 @@ driver = webdriver.Chrome(executable_path='./chromedriver',
 start = time.perf_counter()
 # final_dict = fill_dict(final_dict, 'metro_data/2020-02/2020-02-metropolitan-street.csv', 0, 1000)
 test_dict = load_dict_from_json('data_set_in_neighbourhoods.json')
-final_dict = fill_dict(test_dict, 'metro_data/2020-02/2020-02-metropolitan-street.csv', 9518, 1)
+final_dict = fill_dict(test_dict, 'metro_data/2020-02/2020-02-metropolitan-street.csv', 22000, 80000)
 end = time.perf_counter()
 print('Duration: ' + str(end-start) + 's')
