@@ -72,4 +72,4 @@ function handleJSONFileData(fileData) {
 }
 
 // Do the request
-doGET('https://raw.githubusercontent.com/Lotunnnnny/Remote-Resources/master/test_robbery.csv', handleCSVFileData);
+doGET('https://raw.githubusercontent.com/Lotunnnnny/Remote-Resources/master/Other Crime', handleCSVFileData);
