@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Data-Visualization.iml" filepath="$PROJECT_DIR$/Data-Visualization.iml" />
       <module fileurl="file://$PROJECT_DIR$/London Crimes/London Crimes.iml" filepath="$PROJECT_DIR$/London Crimes/London Crimes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/London Crimes/data/data.iml" filepath="$PROJECT_DIR$/London Crimes/data/data.iml" />
     </modules>
   </component>
 </project>
